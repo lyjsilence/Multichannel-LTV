@@ -1,4 +1,4 @@
-# Cross-Learning LTV
+# Multichannel LTV
  The User Lifetime Value Cross Learning for Kaggle Acquire Valued Shoppers Challenge dataset
 
 ### Requirements
