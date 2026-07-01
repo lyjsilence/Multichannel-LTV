@@ -1,4 +1,4 @@
-# Multichannel LTV
+# MTL-VBB
  The User Lifetime Value Cross Learning for Kaggle Acquire Valued Shoppers Challenge dataset
 
 ### Requirements
@@ -27,3 +27,20 @@ Train the cross-learning model
 python3 run.py --model_name cross_ltv --num_exp 5 
 ```
 
+These experiments generate Table EC.7 in the paper.
+
+### Company-sharing ablation
+
+Run the company-sharing ablation for Table EC.8:
+```
+python3 run_company_sharing_ablation.py --data_path data.pickle --target_company_ids all
+```
+
+### Payment-level auxiliary experiments
+
+Run the payment-level auxiliary experiments for Table EC.9:
+```
+python3 run_payment_level_auxiliary_experiment_101600010.py --data_path data.pickle
+python3 run_payment_level_auxiliary_experiment_103700030.py --data_path data.pickle
+python3 run_payment_level_auxiliary_experiment_107800070.py --data_path data.pickle
+```
